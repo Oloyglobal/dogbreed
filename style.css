@@ -1,0 +1,915 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: 100%
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    /* margin: 10px 0px; */
+}
+.logo > h1{
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    
+}
+li{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+li>a{
+    color: grey;
+    font-size: 13px;
+    padding: 20px;
+    font-weight: lighter;
+}
+
+.hungburger > .fa-solid{
+    font-size: 50px;
+    color: white;
+    display: flex;
+    display: none;
+}
+
+@media screen and (max-width:650px) {
+    .nav-container{
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+    ul{
+        display: none;
+    }
+        
+    }
+    
+    
+.home-container{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+ 
+.home-banner{
+    width: 100%;
+    background-image: url(asset/dog-breeds-800x533.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* display: flex; */
+    flex-direction: column;
+    /* gap: 50px; */
+}
+
+.overlay{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    gap: 10px;
+    
+}
+.overlay > h1{
+ font-size: 3rem;
+ color: white;
+ padding: 20px;
+ padding-top: 150px;
+}
+.overlay > h3{
+ font-size: 21px;
+ color: lightgrey;
+ font-weight: lighter;
+
+
+}
+
+.homecont{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+}
+button{
+    width: 190px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+
+}
+p{
+    color: white;
+    padding-top: 10px;
+    font-size: 15px;
+    /* font-weight: lighter; */
+}
+
+@media screen and (max-width:650px) {
+    .home-container{
+        width: 100%;
+    }
+    .home-banner{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 630px;
+        
+    }
+    .overlay{
+       width: 100%;
+       flex-direction: column;
+       
+       
+    }
+    .overlay > h1{
+        font-size: 2.2rem;
+        padding: 20px;
+        
+    }
+    .overlay > h3{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .homecont{
+        padding: 0px;
+        gap: 0px;
+        padding-bottom: 350px;
+        gap: 30px;
+    }
+}
+
+
+.about-container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 50px;
+
+}
+
+.aboutdog{
+    flex-direction: column;
+    width: 32%;
+    
+    text-align: center;
+    margin: 100px;
+}
+.aboutdog > h1{
+ font-size: 3rem;
+ color: black;
+ font-family: 'Courier New', Courier, monospace;
+}
+ 
+
+.aboutdog > h5{
+ color: gold;
+ font-size: 20px;
+ font-family: 'Courier New', Courier, monospace;
+}
+
+
+.aboutdog1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: start;
+}
+.abtdog{
+    width: 30%;
+    height: 400px; 
+    flex-direction: column;
+    
+    
+}
+.abtdog:nth-child(1){
+    width: 32%;
+    background-image: url(asset/dog_1.jpg.webp);
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+ .abtdog:nth-child(2) > p{
+   font-size: 22px;
+   font-weight: lighter;
+   color: lightgray;
+
+   
+}
+
+ .abtdog:nth-child(3) > p{
+   font-size: 22px;
+   color: lightgray;
+   
+}
+
+ .abtdog:nth-child(3) > span{
+   font-size: 23px;
+   padding-right:70px;
+   color: gold;
+   display: flex;
+   
+}
+@media screen and (max-width:650px) {
+.about-container{
+    flex-direction: column;
+    width: 100%;
+    margin: 0%;
+}
+.aboutdog1{
+    flex-direction: column;
+    width: 100%;
+    
+}
+.aboutdog{
+    width: 100%;
+}
+.aboutdog>h5{
+    align-items: flex-start;
+    font-size: 16px;
+    text-align: start;
+}
+.aboutdog>h1{
+    align-items: flex-start;
+    font-size: 2.5rem;
+    text-align: start;
+    
+}
+.abtdog{
+    width: 100%;
+    
+}
+
+.abtdog:nth-child(1){
+    width: 100%;
+}
+.abtdog:nth-child(2) > p{
+    width: 100%;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 20px;
+
+}
+.abtdog:nth-child(3) > p{
+    width: 100%;
+    font-size: 17px;
+    padding: 20px;
+    font-weight: 300;
+}
+.abtdog:nth-child(3) > span{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+}
+    
+}
+
+.dogowner-container{
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 800px;
+    background-color: rgb(248,249,250);
+    
+    
+}
+.dog-owner:nth-child(1){
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 40px auto; */
+
+}
+
+.dog-owner:nth-child(1)>h1{
+    font-size: 2.2rem;
+    color: black;
+    font-weight: 400;
+    padding-top: 50px; 
+    
+ 
+
+}
+.dog-owner:nth-child(1)>h3{
+    font-size: 20px;
+    color: lightgray;
+    font-weight: 450;
+    /* padding-top: 50px; */
+
+
+}
+
+.dog-owner:nth-child(2){
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+    
+}
+.dogown{
+    width: 30px;
+    height: 400px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+}
+.dogown>.overlay{
+    width: 86%;
+    height: 100px;
+    background-color: white;
+    margin-top: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.overlay>h2{
+    padding-top: 30px;
+    font-weight: 300;
+}
+.dogown:nth-child(1){
+    width: 33%;
+    background-image:url(asset/person_2.jpg.webp) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+}
+.dogown:nth-child(2){
+    width: 33%;
+    background-image:url(asset/person_3.jpg.webp) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+}
+.dogown:nth-child(3){
+    width: 33%;
+    background-image:url(asset/person_4.jpg.webp) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+}
+
+@media screen and (max-width:650px) {
+    .dogowner-container{
+        width: 100%;
+
+    }
+    .dog-owner:nth-child(1){
+        width: 100%;
+        margin: 0%;
+        
+    }
+    .dog-owner:nth-child(2){
+        width: 100%;
+        margin: 0px;
+        flex-direction: column;
+        
+    }
+    
+    .dogown:nth-child(1){
+        width: 100%;
+    }
+    .dogown:nth-child(2){
+        width: 100%;
+    }
+    .dogown:nth-child(3){
+        width: 100%;
+    }
+    .dogown>.overlay{
+        margin: 0%;
+        width: 100%;
+        
+    }
+}
+
+.breed-collection{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.breed-container:nth-child(1){
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    
+
+}
+ .breed-container:nth-child(1)>h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: black;
+ }
+
+ .breed-container:nth-child(2){
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin: 20px auto;
+    
+
+}
+.breed-container:nth-child(2) > h3{
+    color: lightgrey;
+    font-size: 20px;
+}
+
+
+.breed-container1{
+    width: 90%;
+    display: flex;
+    margin-left: 70px;
+    
+
+}
+
+.dog-breed:nth-child(1){
+    width: 33%;
+    background-image: url(asset/dog_1.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.dog-breed:nth-child(2){
+    width: 33%;
+    background-image: url(asset/dog_2.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.dog-breed:nth-child(3){
+    width: 33%;
+    background-image: url(asset/dog_3.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.breed-container2{
+    width: 90%;
+    display: flex;
+    margin-left: 70px;
+    
+
+}
+
+.dog-breed1{
+    width: 33%;
+    background-image: url(asset/dog_4.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.dog-breed2{
+    width: 33%;
+    background-image: url(asset/dog_5.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.dog-breed3{
+    width: 33%;
+    background-image: url(asset/dog_6.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+@media screen and (max-width:650px) {
+    .breed-collection{
+        width: 100%;
+        flex-direction: column;
+    }
+    .breed-container{
+        flex-direction: column;
+    }
+    .breed-container:nth-child(1){
+        width: 100%;
+        /* margin-top: 100px; */
+        flex-direction: column;
+        margin: 0%;
+    }
+    
+
+    .breed-container:nth-child(2){
+      flex-direction: column;
+      width: 100%;
+      margin: 0%;
+
+    }
+
+    .breed-container:nth-child(1)>h1{
+        font-size: 2rem;
+        width: 100%;
+        padding-top: 700px;
+        
+    }
+
+    .breed-container:nth-child(1)>h3{
+        font-size: 10px;
+        padding-bottom: 50px;
+    }
+
+    .breed-container1{
+        flex-direction: column;
+        width: 100%;
+        margin: 0%;
+        
+    }
+
+    .dog-breed:nth-child(1){
+        width: 100%;
+        margin: 10px;
+       }
+    .dog-breed:nth-child(2){
+        width: 100%;
+        margin: 10px;
+       }
+    .dog-breed:nth-child(3){
+        width: 100%;
+        margin: 10px;
+       }
+    
+    .breed-container2{
+        flex-direction: column;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .dog-breed1{
+        width: 100%;
+        margin: 10px;
+    }
+    .dog-breed2{
+        width: 100%;
+        margin: 10px;
+        
+    }
+    .dog-breed3{
+        width: 100%;
+        margin: 10px;
+    }
+
+    
+}
+
+.blog-container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.blog-box1{
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto;
+}
+.blog-box1>h1{
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 400;
+    padding: 30px;
+}
+.blog-box1 > h3{
+    font-size: 20px;
+    color: lightgrey;
+}
+.blog-box2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.blogs1{
+    width: 23%;
+    height: 400px;
+    background-image: url(asset/blog_1.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}   
+
+.blogs2{
+    width: 23%;
+    height: 400px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    
+}
+
+.blogs2 > p{
+    font-size: 20px;
+    color: lightgray;
+    padding-top: 10px;
+}
+.blogs2 > h3{
+    font-size: 22px;
+    color: gold;
+
+}
+.blogs2 > h5{
+    font-size: 20px;
+    color: lightgray;
+}
+.blogs2 > button{
+    width: 150px;
+    background-color: gold;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    
+    
+} 
+
+.blogs3{
+  width: 23%;
+  flex-direction: column;
+  justify-content: center; 
+  
+}
+.blog1{
+ background-image: url(asset/blog_2.jpg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 200px;
+  margin: 10px;
+}
+.blog2{
+ background-image: url(asset/blog_3.jpg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 200px;
+  margin: 10px;
+}
+
+.blogs4{
+  width: 28%;
+  flex-direction: column;
+  margin-bottom: 80px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: start;
+  flex-direction: column-reverse;
+  
+}
+
+.bloger > p{
+    font-size: 20px;
+    color: lightgray;
+    padding: 10px;
+    flex-direction: column-reverse;
+
+}
+.bloger > h3{
+    font-size: 20px;
+    color: gold;
+    padding: 10px;
+    
+
+}
+
+.bloger > button{
+    width: 150px;
+    background-color: gold;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    
+} 
+
+
+@media screen and (max-width: 650px) {
+    .blog-container{
+        width: 100%;
+
+    }
+    .blog-box1{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .blog-box1>h1{
+     font-size: 2rem;
+    }
+    .blog-box2{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .blogs1{
+    width: 100%;
+    flex-direction: column;
+    
+}
+    .blogs2{
+    width: 100%;
+    flex-direction: column;
+    padding: 15px;
+    /* font-size: 15px; */
+    
+}
+    .blogs3{
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    
+
+    
+}
+    .blogs4{
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    
+
+    
+}
+ 
+}
+
+
+.contact-container{
+    width: 100%;
+    flex-direction: column;
+    /* height: 400px; */
+    background-color: rgb(44,41,42);
+    margin-top: 100px;
+    
+}
+
+.contact-box{
+    display: flex;
+    margin: 10px auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.contact{
+    width: 26%;
+    flex-direction: column;
+    margin: 50px auto;
+    
+    
+}
+.contact>p{
+    font-size: 16px;
+    color: grey;
+}
+.contact>h2{
+    font-size: 24px;
+    color: white;
+    /* padding-bottom: 30px; */
+}
+.media-link{
+    display: flex;
+    margin: 40px auto;
+    gap: 20px;
+}
+a >.fa-brands{
+    color: gold ;
+    font-size: 20px;
+    
+    
+}
+
+a >.fa-brands:hover{
+  color: black;
+  background-color: white;
+}
+
+ span{
+    font-size: 16px;
+    color: grey;
+    
+}
+
+span> h4{
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 20px;
+    
+}
+
+.contact>h5{
+    font-size: 15px;
+    color: gold;
+    padding: 15px;
+}
+
+
+
+.contact-box2{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.contact-box2>p{
+    font-size: 15px;
+    color: gray;
+}
+ p>span{
+    color: gold;
+ }
+
+
+@media screen and (max-width:650px){
+    .contact-box{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contact{
+        width: 80%;
+        /* margin-left: 20px; */
+    }
+}
+
+
+
+
+
+
+
